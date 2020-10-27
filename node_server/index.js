@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 
 app.use("/assets", express.static("../assets"))
+app.use("/", express.static("../"))
 
 app.get("/", (req, res) => {
     console.log("Request to homepage")
