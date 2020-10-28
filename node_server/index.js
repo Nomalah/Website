@@ -9,6 +9,10 @@ app.get("/", (req, res) => {
     res.sendFile("/Users/marian/Desktop/Programming/Nomalah.github.io/index.html");
 });
 
+app.get('*', function(req, res){
+    res.status(404).sendFile("/Users/marian/Desktop/Programming/Nomalah.github.io/404.html");
+  });
+
 app.listen(5000, "localhost", () => {
     console.log("Listening on localhost:5000");
 });
