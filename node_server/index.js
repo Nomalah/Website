@@ -9,11 +9,6 @@ app.get("/", (req, res) => {
     res.sendFile("/Users/marian/Desktop/Programming/Nomalah.github.io/index.html");
 });
 
-app.get("/assets/img/resume.pdf", (req, res) => {
-    console.log("Request resume")
-    res.sendFile("/assets/img/resume.pdf");
-});
-
 app.get('*', function(req, res){
     res.status(404).sendFile("/Users/marian/Desktop/Programming/Nomalah.github.io/404.html");
   });
