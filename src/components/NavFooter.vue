@@ -19,13 +19,14 @@
 <style scoped>
 .footer {
     width: 100%;
-    color: var(--gryphon-red);
+    color: var(--gryphon-dark-white);
     text-align: center;
     justify-content: space-evenly;
     display: flex;
     align-items: center;
     padding: 50px 0;
     flex-grow: 0;
+    flex-flow: row wrap;
 }
 
 .media_logos img {
@@ -43,19 +44,5 @@
 .contact_info {
     text-align: left;
     line-height: 170%;
-}
-
-@media screen and (max-width: 900px) {
-    .footer {
-        flex-direction: column;
-    }
-
-    .footer > * {
-        margin: 10px 0;
-    }
-
-    .contact_info {
-        text-align: center;
-    }
 }
 </style>

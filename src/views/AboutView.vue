@@ -1,37 +1,35 @@
-<script setup lang="ts">
-import { onMounted } from "vue";
-onMounted(() => {
-    const map: HTMLElement = document.getElementById("map")!;
-    const frame: HTMLIFrameElement = document.createElement("iframe");
-    frame.src =
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21842.523643301887!2d-80.23692987083086!3d43.530101771774326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b9b28ceea7401%3A0xa48ca79ad3a559a6!2sGRYPHON%20RACING!5e0!3m2!1sen!2sca!4v1690415587608!5m2!1sen!2sca";
-    frame.allowFullscreen = true;
-    frame.referrerPolicy = "no-referrer-when-downgrade";
-    frame.title = "Gryphon Maps";
-    frame.frameBorder = "0"; // Deprecated by vue, but css styling properties have no effect
-    frame.height = "100%";
-    frame.width = "100%";
-    map.appendChild(frame);
-});
-</script>
-
 <template>
     <div class="root">
         <div class="shop_info">
             <div class="info">
-                <h1>Location</h1>
+                <h1 class="mt-5">About Me:</h1>
+                <p class="lead">I'm a university student living in Kitchener, Ontario, Canada. I am studying computer engineering, and tinker in my free time.</p>
                 <p>
-                    University of Guelph<br />
-                    Physical Resources Building<br />
-                    50 Stone Rd E, Guelph, ON N1G 2W1
+                    You can follow me on <a href="https://github.com/Nomalah">GitHub</a>, You may also send me an email at
+                    <a href="mailto:contact@dallashart.com">contact@dallashart.com</a>
                 </p>
-                <p>
-                    Join our team as members, <br />
-                    sponsors or advisors
-                </p>
+                <p>My interest in computer science & engineering is quite broad. Here are some of the skills I have learned:</p>
+                <ul>
+                    <li>Front-end web development using HTML, CSS, and Javascript</li>
+                    <li>
+                        Back-end web development in Javascript & Typescript using <a href="https://playerio.com" class="text-dark"><u>Node.js</u></a> and
+                        <a href="https://playerio.com" class="text-dark"><u>Meteor</u></a>
+                    </li>
+                    <li>
+                        Browser rendering with <a href="https://playerio.com" class="text-dark"><u>p5.js</u></a> and <a href="https://playerio.com" class="text-dark"><u>phaserjs</u></a>
+                    </li>
+                    <li>
+                        Server hosting on <a href="https://playerio.com" class="text-dark"><u>PlayerIO</u></a>
+                    </li>
+                    <li>Competitive programming in C++, Python, and Javascript</li>
+                    <li>Creating gradient descent and neuroevolution machine learning applications</li>
+                    <li>Custom game AI, designed using minimax and alpha beta pruning</li>
+                    <li>
+                        Version control using Git and group collaboration using <a href="https://github.com" class="text-dark"><u>GitHub</u></a>
+                    </li>
+                </ul>
+                <p>You can check out some of the projects I've created on my <a href="/portfolio">portfolio</a>.</p>
             </div>
-
-            <div id="map" class="map"></div>
         </div>
     </div>
 </template>
@@ -49,7 +47,7 @@ onMounted(() => {
     display: flex;
     padding: 15vh 15% 10vh;
 
-    color: var(--gryphon-red);
+    color: var(--gryphon-light-black);
 }
 
 .map {

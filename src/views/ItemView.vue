@@ -78,7 +78,6 @@ const product_description = ref(products[props.item].description.join(""));
     min-height: 0;
 }
 
-
 .button-wrapper {
     display: flex;
     justify-content: center;

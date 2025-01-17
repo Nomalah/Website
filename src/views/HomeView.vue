@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import NavFooter from "@/components/NavFooter.vue";
+// import NavFooter from "@/components/NavFooter.vue";
 </script>
 
 <template>
     <div class="landing_page_image">
         <div class="floating_scroll_body">
-            <div class="additional_info">
+            <!-- <div class="additional_info">
                 <div class="about_us">
                     <h1>About Us</h1>
                     <hr />
@@ -18,8 +18,8 @@ import NavFooter from "@/components/NavFooter.vue";
                         troubleshooting, optimizing system integration, or providing insights into advanced engineering techniques, we are committed to your success.
                     </p>
                 </div>
-            </div>
-            <NavFooter></NavFooter>
+            </div> -->
+            <!-- <NavFooter></NavFooter> -->
         </div>
     </div>
 </template>

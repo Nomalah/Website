@@ -12,7 +12,9 @@ const is_error_active = ref(false);
         <img v-if="!is_error_active" :src="props.src" class="profile_picture" :alt="props.name" @error="is_error_active = true" />
         <img v-else src="/media/coming_soon.png" class="profile_picture" alt="Coming Soon" />
         <h1>{{ props.name }}</h1>
-        <slot></slot>
+        <div>
+            <slot></slot>
+        </div>
     </RouterLink>
 </template>
 
@@ -23,6 +25,7 @@ const is_error_active = ref(false);
     transition: 0.3s;
     border-radius: 5px;
     padding: 10px;
+    width: 220px;
     display: flex;
     flex-direction: column;
     text-align: center;
